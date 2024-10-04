@@ -1,11 +1,13 @@
 import { useParams } from 'react-router-dom'
 import LessonSummary from '../components/LessonSummary'
 import { Link } from 'react-router-dom'
-import { courses } from '../courses.js'
+import {LanguageContext} from "../store/languageContext";
+import {useContext} from "react";
 
 function Course() {
+  const { language, setLanguage, languageData } = useContext(LanguageContext)
   const { courseId } = useParams()
-  const course = courses.find(course => course.id === parseInt(courseId))
+  const course = languageData.find(course => course.id === parseInt(courseId))
   return (
     <div className="Course page">
       <header>

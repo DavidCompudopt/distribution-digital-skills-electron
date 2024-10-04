@@ -1,10 +1,12 @@
 import { Link, useParams } from 'react-router-dom'
 import CompleteAndContinueButton from "../components/CompleteAndContinueButtons";
-import { courses } from '../courses.js'
+import {useContext} from "react";
+import {LanguageContext} from "../store/languageContext";
 
 function Lesson() {
+  const { language, setLanguage, languageData } = useContext(LanguageContext)
   const { courseId, lessonId } = useParams()
-  const course = courses.find(course => course.id === parseInt(courseId))
+  const course = languageData.find(course => course.id === parseInt(courseId))
   const lesson = course.lessons.find(lesson => lesson.id === parseInt(lessonId))
   const videoString = `/videos/${lesson.videoId}`
   console.log(videoString)
