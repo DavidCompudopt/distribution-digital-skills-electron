@@ -67,7 +67,7 @@ export const coursesES = [
             },
             {
                 id: 2,
-                title: "Lección 2 ",
+                title: "Lección 2",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "Email-Spanish/b._correao_electrónico_-_lección_2 (720p).mp4"
             },
@@ -121,19 +121,19 @@ export const coursesES = [
                 videoId: "InternetUseandSafety-Spanish/4._uso_y_seguridad_de_internet_-_pasos_para_mantenerse_seguro_en_internet (720p).mp4"
             },
             {
-                id: 4,
+                id: 5,
                 title: "Guía para Padres sobre la Seguridad en línea",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "InternetUseandSafety-Spanish/5._uso_y_seguridad_de_internet_-_guía_para_padres_sobre_la_seguridad_en_línea (720p).mp4"
             },
             {
-                id: 4,
+                id: 6,
                 title: "Ciudadanía Digital",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "InternetUseandSafety-Spanish/6._uso_y_seguridad_de_internet_-_ciudadanía_digital (720p).mp4"
             },
             {
-                id: 4,
+                id: 7,
                 title: "Alfabetización Digital",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "InternetUseandSafety-Spanish/7._uso_y_seguridad_de_internet_-_alfabetización_digital (720p).mp4"
@@ -288,7 +288,7 @@ export const coursesES = [
             },
             {
                 id: 2,
-                title: "Lección 2 ",
+                title: "Lección 2",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "b._google_workspace_-_lección_2 (720p).mp4"
             },
@@ -313,19 +313,19 @@ export const coursesES = [
         lessons: [
             {
                 id: 1,
-                title: "Welcome to the course",
+                title: "Más Educación y Aprendizaje",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "TechforLife-Spanish/1._aprendizaje_digital_-_más_educación_y_aprendizaje (1080p).mp4"
             },
             {
                 id: 2,
-                title: "How does a camera work?",
+                title: "Necesidades Médicas",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "TechforLife-Spanish/2._aprendizaje_digital_-_necesidades_médicas (1080p).mp4"
             },
             {
                 id: 3,
-                title: "What is exposure?",
+                title: "Manteniéndose Conectado",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit bibendum ex nec interdum.",
                 videoId: "TechforLife-Spanish/3._aprendizaje_digital_-_manteniéndose_conectado (1080p).mp4"
             },

@@ -12,15 +12,20 @@ function Home() {
     }
 
   return (
-    <div className="Home page">
-      <header>
-          <h1>Digital Skills at Home</h1>
-          <button className="button primary icon" onClick={handleToggleLanguage}>{language === 'courses'? 'Cambiar a Espanol' : 'Switch to English'}</button>
-      </header>
-      {languageData.map((course) => (
-        <CourseSummary course={course} key={course.id} />
-      ))}
-    </div>
+      <>
+          <button className="button primary icon"
+                  onClick={handleToggleLanguage}>{language === 'courses' ? 'Cambiar a Espanol' : 'Switch to English'}</button>
+          <div className="Home page">
+              <header>
+                  <h1>Digital Skills at Home</h1>
+
+              </header>
+              {languageData.map((course) => (
+                  <CourseSummary course={course} key={course.id}/>
+              ))}
+          </div>
+      </>
+
   )
 }
 

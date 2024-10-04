@@ -17,7 +17,6 @@ const LanguageProvider = ({ children }) => {
     }, [language])
 
     const fetchLanguageData = () => {
-        let data = {}
         if (language === 'courses'){
             setLanguageData(courses)
         }

@@ -11,25 +11,35 @@ function Lesson() {
   const videoString = `/videos/${lesson.videoId}`
   console.log(videoString)
 
+  const handleToggleLanguage = () => {
+    const newLanguage = language === 'courses' ? 'courses-es' : 'courses';
+    setLanguage(newLanguage);
+  }
+
   const nextLessonId = () => {
     const currentIndex = course.lessons.indexOf(lesson)
     const nextIndex = (currentIndex + 1) % course.lessons.length
     return course.lessons[nextIndex].id
   }
-  return (
-    <div className="Lesson page">
-      <header>
 
-        <p>
-          <Link to={'/courses/' + course.id}>Back to {course.title}</Link>
-        </p>
-        <h1>{lesson.title}</h1>
-      </header>
-      <div className="Content">
-        <video width="100%" controls src={videoString}/>
-        <CompleteAndContinueButton courseId={courseId} lessonId={nextLessonId()}/>
-      </div>
-    </div>
+  return (
+      <>
+        <button className="button primary icon"
+                onClick={handleToggleLanguage}>{language === 'courses' ? 'Cambiar a Espanol' : 'Switch to English'}</button>
+
+        <div className="Lesson page">
+          <header>
+            <p>
+              <Link to={'/courses/' + course.id}>Back to {course.title}</Link>
+            </p>
+            <h1>{lesson.title}</h1>
+          </header>
+          <div className="Content">
+            <video width="100%" controls src={videoString}/>
+            <CompleteAndContinueButton courseId={courseId} lessonId={nextLessonId()}/>
+          </div>
+        </div>
+      </>
   )
 }
 
