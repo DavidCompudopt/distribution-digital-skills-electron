@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import LessonSummary from '../components/LessonSummary'
 import { Link } from 'react-router-dom'
-import courses from '../courses'
+import { courses } from '../courses.js'
 
 function Course() {
   const { courseId } = useParams()

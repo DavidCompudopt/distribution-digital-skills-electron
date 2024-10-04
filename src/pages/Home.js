@@ -1,13 +1,25 @@
 import CourseSummary from '../components/CourseSummary'
-import courses from '../courses'
+import {useContext} from "react";
+import {LanguageContext} from "../store/languageContext";
+
 
 function Home() {
+
+    const { language, setLanguage, languageData } = useContext(LanguageContext)
+    const handleToggleLanguage = () => {
+        const newLanguage = language === 'courses' ? 'courses-es' : 'courses';
+        setLanguage(newLanguage);
+    }
+    console.log(language);
+    console.log(languageData.keys())
+
   return (
     <div className="Home page">
       <header>
-        <h1>React Online Course Site</h1>
+          <h1>Digital Skills at Home</h1>
+          <button onClick={handleToggleLanguage}>{language === 'courses'? 'Cambiar a Espanol' : 'Switch to English'}</button>
       </header>
-      {courses.map((course) => (
+      {languageData.map((course) => (
         <CourseSummary course={course} key={course.id} />
       ))}
     </div>
