@@ -2,7 +2,7 @@ export const coursesES = [
     {
         id: 1,
         title: "Conocimientos Básicos de Computadora",
-        description: "ComputerBasics-Spanish/Cras ut sem eu ligula luctus ornare quis nec arcu.",
+        description: "Introduccion al uso de su nueva computadora",
         lessons: [
             {
                 id: 1,
@@ -142,7 +142,7 @@ export const coursesES = [
     },
     {
         id: 4,
-        title: "Tech for Business - Comenzando su búsqueda de empleo",
+        title: "Tecnología para trabajar - Comenzando su búsqueda de empleo",
         description: "Cras ut sem eu ligula luctus ornare quis nec arcu.",
         lessons: [
             {
@@ -197,7 +197,7 @@ export const coursesES = [
     },
     {
         id: 5,
-        title: "Tech for Business - Google Docs",
+        title: "Tecnología para trabajar - Google Docs",
         description: "Cras ut sem eu ligula luctus ornare quis nec arcu.",
         lessons: [
             {
@@ -240,7 +240,7 @@ export const coursesES = [
     },
     {
         id: 6,
-        title: "Tech for Business - Google Slides",
+        title: "Tecnología para trabajar - Google Slides",
         description: "Cras ut sem eu ligula luctus ornare quis nec arcu.",
         lessons: [
             {
@@ -277,7 +277,7 @@ export const coursesES = [
     },
     {
         id: 7,
-        title: "Tech for Business - Google Workspace",
+        title: "Tecnología para trabajar - Google Workspace",
         description: "Cras ut sem eu ligula luctus ornare quis nec arcu.",
         lessons: [
             {
@@ -308,7 +308,7 @@ export const coursesES = [
     },
     {
         id: 8,
-        title: "Tech for Life",
+        title: "Tecnología para uso diario",
         description: "Cras ut sem eu ligula luctus ornare quis nec arcu.",
         lessons: [
             {
